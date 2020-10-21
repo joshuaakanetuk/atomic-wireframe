@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Dashboard</title>
+        <title>Stats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
         .dash_tab_bar {display: flex; align-items: center; justify-content: space-evenly;}
         .dash_tab_bar a{color:black}
         .proposal__link { background-color: #333; border-radius: 50%; width: 60px; height: 60px; position: fixed; display: flex; justify-content: center; align-items: center; bottom: 20px; right: 20px; box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16); }
-
+        .avatar {}
 
     </style>
     </head>
@@ -24,24 +24,18 @@
             <nav style="background-color: #333; height: 70px; color: white; display: flex; align-items: center; justify-content: space-evenly;">
                 <a href="./index.html">HOME</a>
                 
-                <a href="./profile.html">PROFILE</a>
+                <a href="">PROFILE</a>
             </nav>
             <!-- VIEW GOES HERE-->
             <section style="height: calc(100vh - 75px); align-items: center; justify-content: center;">
-                <div class="dash_tab_bar">
-                    <a href="">DASHBOARD</a>
-                    <a href="./stats.html">STATS</a>
-                </div>
-                <div class="cell_group">
-                    <h2>I went running for 4 miles.</h2>
-                    <p>I am so tired right now.</p>
-                    <span>October 13 at 9:18PM</span>
-                </div>
-                <div class="cell_group">
-                    <h2>I went running for 4 miles.</h2>
-                    <p>I am so tired right now.</p>
-                    <span>October 13 at 9:18PM</span>
-                </div>
+                <form>
+                    <div class="avatar"></div>
+                    <label>Name:</label>
+                    <input value="Joshua Akan-Etuk" type="text"></input><br>
+                    <label>Profile Image URL:</label>
+                    <input type="text"></input><br>
+                    <input type="submit"></input><br>
+                </form>
             </section>
         </section>
     </body>
